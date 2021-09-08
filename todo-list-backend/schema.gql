@@ -1,0 +1,19 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TodoItem {
+  id: ID!
+  content: String!
+  done: Boolean!
+}
+
+type Query {
+  allItems: [TodoItem!]!
+}
+
+type Mutation {
+  addItem(content: String!): TodoItem!
+  removeItem(id: String!): Boolean!
+  updateItem(id: String!): Boolean!
+}
